@@ -183,18 +183,20 @@ $('#modal').modal('hide');
 <style>
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-body{
-  background-color: gray;
 
+body{
+  background-color: #EDC7B7;
+  max-width: 100%;
 }
 .title{
   font-weight: bold;
   font-style: italic;
   text-align: center;
+  color: white;
 }
 form .data label{
   font-size: 15px;
-  color: black;
+  color: white;
   font-weight:bold;
   text-align: justify;
 }
@@ -203,40 +205,45 @@ form .data input{
   width: 100%;
   padding-left: 10px;
   font-size: 17px;
-  border: 1px solid red;
-  box-shadow: 5px 5px 5px black;
+  /* border: 2px solid black;
+  box-shadow: 5px 5px 5px black; */
   border-radius: 10px;
 }
 .modal-body{
-  background-color: #55BCCB;
+  background-color: #2C3531;
   text-align: justify;
-  width: 300px;
-  height: 500px;
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   box-shadow: 5px 5px 5px black;
   border-radius: 10px;
+  display: block;
 }
 #login {
   margin:0 auto;
   display: block;
-  margin-top: 5%;
-}
-
-#modal {
-  /* width: 500px;
-  height: 500px; */
+  /* center */
+  position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -150px;
-  margin-top: -200px;
+  transform: translate(-50%, -50%);
+}
+
+.modal {
+  background-color: #BAB2B5;
 }
 
 .btnsubmit{
-  background-color: red;
+  background-color: white;
   display: block;
   width: 100%;
   border-radius: 5px;
   border-color: black;
   padding: 10px 25px;
+  color: red;
   cursor: pointer;
   font-size: 18px;
   font-weight: bold;
@@ -244,7 +251,7 @@ form .data input{
 
 }
 .btnsubmit:hover{
-  background-color: white;
+  background-color: black;
   transition: .2s;
 }
 /* Signup Link */
@@ -259,17 +266,23 @@ form .data input{
 }
 /* otp modal */
 .modal-content {
-  width: 100% ;
+  /* width: 100% ;
   height: 100%;
   margin-left: -30px;
-  margin-top: -10px;
+  margin-top: -10px; */
+  margin-top: 300px;
+}
+h3{
+  color: white;
 }
 .submit1{
   display: block;
-  width: 100%;
+  width: 80%;
+  height: 80%;
   border-radius: 5px;
   border-color: black;
-  padding: 10px 25px;
+  /* padding: 5px 25px; */
+  margin: 10px;
   cursor: pointer;
   font-size: 18px;
   font-weight: bold;
